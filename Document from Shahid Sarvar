@@ -1,20 +1,20 @@
-# String slicing
-lang = "python"
-print(lang[0])
-print(lang[0:3])
-print(lang[0:4])
-print(lang[:-2])
-print(lang[:3])
+# Use of count and len function
+name,char = input("Enter the name and character:-").split(",")
+print(f"Length of your name is{len(name)}")
+print(f"character count:{name.lower().count(char.lower())} ")
 
-# Step argument slicing
-# syntax - [start argument:stop argument -1 : step]
-print("Programming"[10::-1])
-print("Programming"[0:5:1])
-print("Programming"[0:10:2])
-print("programming"[0:10:3])
+# replace()
+# find method()
 
-# Excercise ques
-# Ask uuser name and print it in reverse order
-name = input("Enter your name:-")
-a = name[::-1]
-print(f"Reverse name is {a}.")
+sen = "He is at his home and he is eating his lunch"
+print(sen.replace("is","was"))
+print(sen.replace(" ","_"))
+
+pos1 = sen.find("is")
+pos2 = sen.find("is",pos1+1)
+print(pos1)
+print(pos2)
+
+# center() method
+name = input("Enter the name:-")
+print(name.center(len(name)+4,"$"))
