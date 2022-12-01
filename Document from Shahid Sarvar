@@ -1,21 +1,20 @@
-# Two or more inputs in one line
-name,age = input("Enter the name and age:-").split(",")
-print(name)
-print(age)
-# String Formatting
-name = "Shivam"
-age = 19
-print("Your name is "+name+" and Your age is "+str(age))#Python2
+# String slicing
+lang = "python"
+print(lang[0])
+print(lang[0:3])
+print(lang[0:4])
+print(lang[:-2])
+print(lang[:3])
 
-print("Your name is {} and Your age is {}".format(name,age))#Python3
+# Step argument slicing
+# syntax - [start argument:stop argument -1 : step]
+print("Programming"[10::-1])
+print("Programming"[0:5:1])
+print("Programming"[0:10:2])
+print("programming"[0:10:3])
 
-print(f"Your name is {name} and Your age is {age}")
-
-
-# Excersice question
-#Ask user to input three numbers and you have to print average of three no. using string formatting.
-num1 = 90
-num2 = 87
-num3 = 97
-avg = int(num1+num2+num3)/3
-print(f"Numbers are {num1},{num2},{num3} and their average is {avg}.")
+# Excercise ques
+# Ask uuser name and print it in reverse order
+name = input("Enter your name:-")
+a = name[::-1]
+print(f"Reverse name is {a}.")
