@@ -1,20 +1,13 @@
-# Use of count and len function
-name,char = input("Enter the name and character:-").split(",")
-print(f"Length of your name is{len(name)}")
-print(f"character count:{name.lower().count(char.lower())} ")
-
-# replace()
-# find method()
-
-sen = "He is at his home and he is eating his lunch"
-print(sen.replace("is","was"))
-print(sen.replace(" ","_"))
-
-pos1 = sen.find("is")
-pos2 = sen.find("is",pos1+1)
-print(pos1)
-print(pos2)
-
-# center() method
+# Count the number of letters in the input by the user
 name = input("Enter the name:-")
-print(name.center(len(name)+4,"$"))
+temp_var = ""
+i = 0
+while i<len(name):
+    if name[i] not in temp_var:
+        temp_var +=name[i]
+        print(f"{name[i]} : {name.count(name[i])}")
+    i+=1
+    
+# for loop
+for i in range(1,11):
+    print(f"hello world : {i}")
